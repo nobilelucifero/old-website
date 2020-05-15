@@ -1,0 +1,33 @@
+// Nicolas Gallagher's micro clearfix
+.clearfix,
+%clearfix {
+    zoom: 1;
+    &:before, &:after {
+        content: "";
+        display: table; // can be "block"
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+// Avatar abstraction
+// Template base: figure.avatar>img
+.avatar {
+    position: relative;
+    overflow: hidden;
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: inherit;
+        height: inherit;
+        background: none;
+        border-radius: inherit;
+    }
+    img {
+        display: block;
+        width: inherit; // or 100% ?
+    }
+}

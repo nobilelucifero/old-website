@@ -1,0 +1,73 @@
+/*
+	00 - Variables & Mixins
+*/
+
+	/* Variables */
+
+	@link: #2e9ccc;
+		@dark-link: darken(@link, 10%);
+	@text: #32363b;
+
+	/* Colors */
+	@red:     #e6224c;
+	@orange:  #ff7016;
+	@yellow:  #e6d800;
+	@green:   #88d228;
+	@blue:    #4189ff;
+	@purple:  #bf3a88;
+	@tortora: #806d59;
+	@grey:    #c5c5c5;
+	@black:   #333333;
+
+	/* Mixins */
+
+	.rounded (@radius: 2px){
+		-webkit-border-radius: @radius;
+		   -moz-border-radius: @radius;
+		        border-radius: @radius;
+	}
+
+	.roundedFull (@radius: 999px) {
+		-webkit-border-radius: @radius;
+		   -moz-border-radius: @radius;
+		        border-radius: @radius;
+	}
+
+	.gradient (@from, @to) {
+	background-color: @from;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+	background-image: -webkit-linear-gradient(top, @from, @to);
+	background-image:    -moz-linear-gradient(top, @from, @to);
+	background-image:      -o-linear-gradient(top, @from, @to);
+	background-image:         linear-gradient(to bottom, @from, @to);
+	}
+
+	// .h-gradient (@from, @to) {
+	// background-color: @from;
+	// background-image: -webkit-gradient(linear, left top, left bottom, from(@from), to(@to));
+	// background-image: -webkit-linear-gradient(top, @from, @to);
+	// background-image:    -moz-linear-gradient(top, @from, @to);
+	// background-image:      -o-linear-gradient(top, @from, @to);
+	// background-image:         linear-gradient(to bottom, @from, @to);
+	// }
+
+	.text-pressed (@alpha: 0.07) {
+		text-shadow: 0 1px 0 rgba(255,255,255,@alpha);
+	}
+
+	.text-released (@alpha: 0.07) {
+		text-shadow: 0 1px 0 rgba(0,0,0,@alpha);
+	}
+
+	.box-shadow (@inset, @x: 0, @y: 0, @blur: 0, @color: #000) {
+		-webkit-box-shadow: @arguments;
+		        box-shadow: @arguments;
+	}
+
+	.anim-all (@property: all, @speed: 0.1s, @function: linear){
+		-webkit-transition: @arguments;
+		   -moz-transition: @arguments;
+		    -ms-transition: @arguments;
+		     -o-transition: @arguments;
+		        transition: @arguments;
+	}

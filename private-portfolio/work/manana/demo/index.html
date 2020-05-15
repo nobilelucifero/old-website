@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QuickStuff</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="stylesheet" href="styles/main.css" type="text/css" media="screen" />
+    <script defer src="js/fastclick.js"></script>
+    <script src="js/libs.js"></script>
+    <script src="js/app.js"></script>
+</head>
+<body>
+
+    <!-- <div class="spinner"></div> -->
+
+    <section class="view view--notifications hidden" id="view-notifications">
+        <header class="toolbar">
+            <ul class="nav left">
+                <li>
+                    <a class="btn menu-icon js-back" href="#view-home">
+                        <img class="ctrl" src="assets/_controls/header/back-i.svg" alt="">
+                        <img class="logo" src="resources/icon-app.png" alt="">
+                    </a>
+                </li>
+                <li><h1>Notifications (0)</h1></li>
+            </ul>
+            <ul class="nav right">
+                <li>
+                    <a class="btn js-close" href="#view-home">
+                        <div class="label action">Save</div>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="scroll">
+            <div class="scroll-content">
+                <h1>0 Notifications</h1>
+            </div>
+        </div>
+    </section>
+
+    <menu class="view view-drawer hidden" id="view-drawer">
+        <a href="#view-home" class="close-drawer js-close-drawer">Close Drawer</a>
+        <!-- <address>
+            <figure class="avatar"><img src="//placehold/40x40" alt=""></figure>
+        </address> -->
+        <nav class="main">
+            <a class="js-goprofile" href="#view-profile">Item 001</a>
+            <a href="#">Item 002</a>
+            <a href="#">Item 003</a>
+            <a href="#">Item 004</a>
+        </nav>
+    </menu>
+    <div class="view view-home has-bottomnav" id="view-home">
+        <header class="toolbar">
+            <ul class="nav left">
+                <li>
+                    <a class="btn menu-icon js-drawer" href="#view-drawer">
+                        <img class="ctrl" src="assets/_controls/header/menu-i.svg" alt="">
+                        <img class="logo" src="resources/icon-app2.png" alt="">
+                    </a>
+                </li>
+                <li><h1>App Title</h1></li>
+            </ul>
+            <ul class="nav right">
+                <li>
+                    <a class="btn js-notifications" href="#view-notifications">
+                        <span class="label">Notifications</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn js-newstuff" href="#view-popnew">
+                        <span class="label">New</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="scroll">
+            <div class="scroll-content has--subheader">
+                <nav class="subheader eg-subheader">
+                    <a class="active" href="#">Section 1</a>
+                    <a href="#">Section 2</a>
+                    <a href="#">Section 3</a>
+                </nav>
+
+                <h3 class="eg-subtitle">Favorites</h3>
+                <ul class="eg-item-list">
+                    <li><a class="js-goprofile" href="#view-profile">Item 01</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 02</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 03</a></li>
+                </ul>
+                <!-- ul>li*40>h3{Item $$} -->
+                <!-- ul.eg-item-list>li*40>a[href=#]{Item $$} -->
+                <h3 class="eg-subtitle">All items</h3>
+                <ul class="eg-item-list">
+                    <li><a class="js-goprofile" href="#view-profile">Item 01</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 02</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 03</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 04</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 05</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 06</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 07</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 08</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 09</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 10</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 11</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 12</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 13</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 14</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 15</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 16</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 17</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 18</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 19</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 20</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 21</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 22</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 23</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 24</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 25</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 26</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 27</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 28</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 29</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 30</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 31</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 32</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 33</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 34</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 35</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 36</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 37</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 38</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 39</a></li>
+                    <li><a class="js-goprofile" href="#view-profile">Item 40</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="navbar eg2-navbar has-grid" data-grid="5">
+            <nav class="nav">
+                <a class="btn" href="#">1</a>
+                <a class="btn" href="#">2</a>
+                <a class="btn" href="#">3</a>
+                <a class="btn" href="#">4</a>
+                <a class="btn" href="#">5</a>
+            </nav>
+        </footer>
+
+    </div>
+
+    <section class="view hidden" id="view-profile">
+        <header class="toolbar">
+            <ul class="nav left">
+                <li>
+                    <a class="btn menu-icon js-back" href="#view-home">
+                        <img class="ctrl" src="assets/_controls/header/back-i.svg" alt="">
+                        <img class="logo" src="resources/icon-app.png" alt="">
+                    </a>
+                </li>
+                <li><h1>This is a profile</h1></li>
+            </ul>
+            <ul class="nav right">
+                <li>
+                    <a class="btn js-close" href="#view-home">
+                        <span class="label action">Stalk online</span>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        New stuff here
+    </section>
+
+    <div class="view viewpop hidden" id="view-popnew">
+        <header class="toolbar">
+            <ul class="nav left">
+                <li>
+                    <a class="btn menu-icon js-back" href="#view-home">
+                        <img class="ctrl" src="assets/_controls/header/back-i.svg" alt="">
+                        <img class="logo" src="resources/icon-app.png" alt="">
+                    </a>
+                </li>
+                <li><h1>New Item</h1></li>
+            </ul>
+            <ul class="nav right">
+                <li>
+                    <a class="btn js-close" href="#view-home">
+                        <div class="label action">Save</div>
+                    </a>
+                </li>
+            </ul>
+        </header>
+        <div class="scroll">
+            <div class="scroll-content">
+                <form>
+                    Princess Bonnibel Bubblegum
+                    To: Someone
+                    <textarea name="" placeholder="Type here, stupid!"></textarea>
+                </form>
+            </div>
+        </div>
+        <footer class="navbar eg2-navbar has-grid" data-grid="3">
+            <ul class="nav">
+                <a class="btn" href="#">1</a>
+                <a class="btn" href="#">2</a>
+                <a class="btn" href="#">3</a>
+            </ul>
+        </footer>
+    </div>
+
+</body>
+</html>

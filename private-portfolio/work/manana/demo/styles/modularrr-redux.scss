@@ -1,0 +1,40 @@
+/*
+** Toolbar
+*/
+
+
+
+/*
+** Nav Object
+*/
+
+.toolbar {
+    @extend %clearfix;
+    text-align: center;
+}
+
+.navbar {
+    @extend %clearfix;
+    text-align: center;
+}
+
+.nav {
+    @extend %clearfix;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav.left {
+    float: left;
+}
+.nav.center {
+    display: inline-block;
+}
+.nav.right {
+    float: right;
+}
+
+.nav li {
+    display: block;
+    float: left;
+}

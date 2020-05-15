@@ -1,0 +1,73 @@
+// FXFlashSmall animation
+@-webkit-keyframes FXFlashSmall {
+  50% {
+    opacity: 0.1;
+  }
+}
+@keyframes FXFlashSmall {
+  50% {
+    opacity: 0.1;
+  }
+}
+
+// FXRotate animation
+@-webkit-keyframes FXRotate {
+  100% {
+    -webkit-transform: rotateZ(359deg);
+  }
+}
+@keyframes FXRotate {
+  100% {
+    transform: rotateZ(359deg);
+  }
+}
+
+
+// FXLoader animation
+@-webkit-keyframes FXLoader {
+  0% {
+    border-radius: 25%;
+  }
+  50% {
+      -webkit-transform: rotateZ(44deg);
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+@keyframes FXLoader {
+  0% {
+    border-radius: 25%;
+  }
+  50% {
+      transform: rotateZ(44deg);
+  }
+  100% {
+      opacity: 0.5;
+  }
+}
+
+// FXBounce triggering class
+.FXBounce {
+  pointer-events: none;
+  -webkit-animation: FXBounce 0.25s;
+          animation: FXBounce 0.25s;
+}
+
+// FXBounce animation
+@-webkit-keyframes FXBounce {
+  50% { -webkit-transform: scale3d(0.75, 0.75, 0.75) }
+}
+@keyframes FXBounce {
+  50% { transform: scale3d(0.75, 0.75, 0.75) }
+}
+
+@-webkit-keyframes FXProgress {
+  0% { width: 0% }
+  100% { width: 100% }
+}
+@keyframes FXProgress {
+  0% { width: 0% }
+  100% { width: 100% }
+}
+

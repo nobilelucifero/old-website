@@ -1,0 +1,107 @@
+.has--subheader {
+    padding-top: $brand-item-height + $brand-item-height;
+}
+.has--subheader .eg-subheader {
+    position: fixed;
+    top: $brand-item-height;
+}
+
+.eg-subheader {
+    font-size: 0.875rem;
+    font-weight: normal;
+    color: lighten($brand-text, 25%);
+    height: $brand-item-height;
+    line-height: $brand-item-height;
+    background-color: rgba($white, 0.98);
+    border-bottom: 1px solid rgba($black, 0.10);
+    display: table;
+    width: 100%;
+}
+.eg-subheader a {
+    display: table-cell;
+    position: relative;
+    z-index: 2;
+    padding: 0 $brand-item-padding-h;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+}
+.eg-subheader a:active {
+    background-color: rgba($turquoise, 0.10);
+}
+.eg-subheader a.active {
+    color: $brand-text;
+    &:after {
+        display: block;
+        content: "";
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        height: 2px;
+        background-color: $turquoise;
+    }
+}
+
+.eg-subtitle {
+    font-size: 0.75rem;
+    color: #888;
+    text-transform: uppercase;
+    padding: 0.5rem $brand-item-padding-h;
+    border-top: 1px solid rgba(000,000,000,0.10);
+    border-bottom: 1px solid rgba($black, 0.10);
+    &:first-child, &:first-of-type {
+        border-top: 0;
+    }
+}
+
+.eg-item-list {
+    // display: none;
+}
+.eg-item-list li {
+    border-bottom: 1px solid rgba(000,000,000,0.10);
+    &:last-child {
+        border-bottom-color: $white;
+    }
+}
+.eg-item-list li a {
+    display: block;
+    color: #222;
+    line-height: $brand-item-height;
+    padding: $brand-item-padding;
+    text-decoration: none;
+    &:active {
+        color: $white;
+        background-color: rgba($blue, 1.00);
+    }
+}
+
+.eg-navbar .btn {
+    color: $white;
+    background-color: rgba(000,000,000,0.75);
+}
+.eg-navbar .btn.active,
+.eg-navbar .btn:active {
+    background-color: rgba($blue, 0.75);
+}
+
+.eg2-navbar:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -1px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba($black, 0.15); // .1
+}
+.eg2-navbar .btn {
+    color: $brand-text;
+    background-color: rgba($white, 0.5);
+    background-color: rgba(#f8f8f8, 0.98);
+}
+.eg2-navbar .btn.active,
+.eg2-navbar .btn:active {
+    background-color: rgba($blue, 0.75);
+}

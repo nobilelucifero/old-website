@@ -1,0 +1,67 @@
+/*
+	01 - Typography
+*/
+
+	// html { font-size: 16px }
+
+
+
+	body {
+		font: 1em/1.25em /*"Source Sans Pro",*/ "Helvetica Neue", Helvetica, Arial, sans-serif;
+		color: @text;
+
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+	}
+
+	h1, h2, h3, h4, h5, h6 {
+		position: relative;
+		margin: 16px 0;
+		margin: 1rem 0;
+
+		font-weight: normal
+	}
+	h3, h4, h5, h6 {
+		margin: 12px 0 4px;
+		margin: 0.75rem 0 0.25rem;
+	}
+	h5, h6 { font-weight: bold }
+	h1 { font-size: 44px }
+	h2 { font-size: 36px }
+	h3 { font-size: 32px }
+	h4 { font-size: 24px }
+	h5 { font-size: 20px }
+	h6 { font-size: 16px }
+
+	// h1:first-child,
+	// h2:first-child,
+	// h3:first-child,
+	// h4:first-child { margin-top: 0; } ???
+
+	p, pre, address {
+		// line-height: 20px;
+		
+		// margin: 0 0 20px 0;
+		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
+		position: relative;
+	}
+
+	strong { font-weight: bold }
+	/*p strong { line-height: 1.45em }
+
+	strong, b {
+		p & {
+			background: red
+		}
+	}*/
+
+	mark { background: rgba(255,255,000,0.350) }
+	ins { background: rgba(000,255,255,0.25); text-decoration: none }
+
+	a {
+		color: @link;
+
+		&:hover { color: lighten(@link, 10%) }
+		&:active { color: @dark-link }
+	}

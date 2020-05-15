@@ -1,0 +1,63 @@
+/*
+Custom fonts (thanks to fontsquirrel.com, plus some tweaking made by me)
+
+00 - TABLE OF CONTENTS
+01 - Titillum Text (Light, Regular)
+02 - Droid Sans (Regular, Bold)
+*/
+
+/*
+** Titillum Text
+*/
+
+@font-face {
+    font-family: "TitilliumText22LLight";
+    src: url("../fonts/TitilliumText22L002-webfont.eot");
+    src: url("../fonts/TitilliumText22L002-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/TitilliumText22L002-webfont.woff") format("woff"),
+         url("../fonts/TitilliumText22L002-webfont.ttf") format("truetype"),
+         url("../fonts/TitilliumText22L002-webfont.svg#TitilliumText22LLight") format("svg");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TitilliumText22LRegular";
+    src: url("../fonts/TitilliumText22L003-webfont.eot");
+    src: url("../fonts/TitilliumText22L003-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/TitilliumText22L003-webfont.woff") format("woff"),
+         url("../fonts/TitilliumText22L003-webfont.ttf") format("truetype"),
+         url("../fonts/TitilliumText22L003-webfont.svg#TitilliumText22LRegular") format("svg");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*
+** 02 - Droid Sans
+*/
+
+@font-face {
+    font-family: "DroidSans";
+    src: url("../fonts/DroidSans-webfont.eot");
+    src: url("../fonts/DroidSans-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/DroidSans-webfont.woff") format("woff"),
+         url("../fonts/DroidSans-webfont.ttf") format("truetype"),
+         url("../fonts/DroidSans-webfont.svg#DroidSansRegular") format("svg");
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "DroidSans";
+    src: url("../fonts/DroidSans-Bold-webfont.eot");
+    src: url("../fonts/DroidSans-Bold-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/DroidSans-Bold-webfont.woff") format("woff"),
+         url("../fonts/DroidSans-Bold-webfont.ttf") format("truetype"),
+         url("../fonts/DroidSans-Bold-webfont.svg#DroidSansBold") format("svg");
+
+    font-weight: bold;
+    font-style: bold;
+}

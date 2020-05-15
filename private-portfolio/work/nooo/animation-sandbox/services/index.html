@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie ie6"><![endif]-->
+<!--[if IE 7]><html class="ie ie7"><![endif]-->
+<!--[if IE 8]><html class="ie ie8"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <title>Nooo Agency | An Interactive Web Agency that rocks!</title>
+	
+	<!-- Meta infos -->
+    <meta charset="utf-8" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Creative Spooks" />
+    <meta name="description" content="" />
+	
+	<!-- Mobile metas -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="images/favicons/favicon.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/favicons/114.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/favicons/72.png" />
+	<link rel="apple-touch-icon-precomposed" href="images/apple/57.png" />
+
+	<!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css" />
+    <!-- <link rel="stylesheet" href="css/layout.css" /> -->
+    <link rel="stylesheet" href="../css/layout.css" />
+    <!-- <link rel="stylesheet/less" href="css/layout.less" /> -->
+
+    <!-- JS (initial) -->
+    <!--script src="js/webshim/minified/extras/modernizr-custom.js"></script-->
+
+</head>
+<body>
+
+	<div class="container">
+		
+		<div id="header">
+			<div class="line">
+				<div class="column twelve">
+					<a href="#" class="logo" style="margin-left: 10px">
+						<img src="../images/logo.png" alt="Nooo Agency" />
+					</a>
+					<ul class="menu">
+						<li><a href="../">Home</a></li>
+						<li><a href="./">About</a></li>
+						<li><a href="../work/">Work</a></li>
+						<li class="active"><a href="../services/">Services</a></li>
+						<li><a href="../contacts/">Contacts</a></li>
+						<li><a href="https://www.facebook.com/StudioNooo" class="icon" target="_blank" title="Seguici su Facebook"><img src="../images/fb.png" alt="Facebook" /></a></li>
+						<li><a href="https://twitter.com/#!/studionooo" class="icon" target="_blank" title="Seguici su Twitter"><img src="../images/tw.png" alt="Twitter" /></a></li>
+						<li><a href="#en" class="curtain-links">En</a></li>
+					</ul>
+				</div>
+			</div>
+		</div> <!-- end #header -->
+
+		<div id="main" class="slideshow">
+			<div class="line">
+				<div class="column twelve">
+
+					<h1>
+						Services
+					</h1>
+
+					<div class="" style="">
+						<img src="../images/slider-services/slide-00b.png" alt="" />
+					</div>
+
+					<!-- <div class="clipMask">
+						<div id="main" class="mainCanvas">
+							<ul class="slider">
+								<li class="zero">n</li>
+								<li class="one">n</li>
+								<li class="two">n</li>
+								<li class="three">n</li>
+							</ul>
+						</div>
+					</div> -->
+
+				</div>
+			</div>
+		</div> <!-- end #main -->
+
+		<div id="footer">
+			<div class="line">
+				<div class="column six">
+
+					<h4>@noooagency</h4> 
+					<ul class="tweets">
+						<li><p>Lorem Ipsum Dolor Sit Amet</p></li>
+					</ul>
+
+					<h4>From the Blog</h4> 
+					<ul class="posts">
+						<li><a href="#">Lorem Ipsum Dolor Sit Amet &raquo;</a></li>
+					</ul>
+
+				</div>
+				<div class="column six">
+
+					<h4>Say Hello</h4>
+					<p>
+						Cotton candy oat cake pastry danish cake brownie chocolate cake. Pudding chocolate tootsie roll chocolate cake jujubes
+					</p>
+					<ul class="contacts">
+						<li class="block"><a href="#">Twitter</a></li>
+						<li class="block"><a href="#">Email</a></li>
+						<li class="block"><a href="#">Find Us</a></li>
+					</ul>
+
+				</div>
+			</div>
+		</div> <!-- end #footer -->
+
+		<div id="footer-deep">
+			<div class="line">
+				<div class="column twelve">
+					<p>
+						Copyright &copy; Nooo Agency srl 2012 &bull; All rights reserved. &bull; 
+						<abbr title="Partita IVA">P. IVA</abbr>: 03747070245
+					</p>
+				</div>
+			</div>
+		</div> <!-- end #footer-deep -->
+
+	</div>
+
+    <!-- JS  -->
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!--script src="js/raphael-min.js"></script-->
+    <!-- script src="js/less-1.3.0.min.js"></script -->
+    
+    <!--script src="js/functions.js"></script-->
+    <script src="js/functions-ck.js"></script>
+    <script>
+    	// $(".debugToggle").on("click", function(){
+    	// 	$("body").toggleClass("debug2");
+    	// });
+		if($("body").hasClass("debug")){
+			$("a").on("click", function(){ return false });
+		}
+    /*var svg = Raphael("container",400,400);
+
+    var triangle = svg.path("M210 200L190 200L200 100Z").attr({fill:"#000"});
+
+    var circle = svg.circle(200,200,5).attr({fill:"#f00"});
+    triangle.rotate(90);
+
+    var main = $(".mainCanvas");
+
+    var angle = -90;
+
+    main.animate({transform:"r" + angle}, 1000);*/
+
+    </script>
+    
+</body>
+</html>

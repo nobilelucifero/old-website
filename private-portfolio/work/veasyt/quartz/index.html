@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>    <html class="no-js iem7"> <![endif]-->
+<!--[if (gt IEMobile 7)|!(IEMobile)]><!--> <html class="no-js" lang="it"> <!--<![endif]-->
+<head>
+
+    <title>Quartz Places Listing</title>
+	
+	<!-- Meta infos -->
+    <meta name="robots" content="index, nofollow" />
+    <meta name="author" content="Lucifero" />
+    <meta name="description" content="" />
+	
+	<!-- Mobile metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	
+	<!-- Favicons -->
+	<link rel="shortcut icon"                                href="images/favicon.png"              />    
+	<link rel="apple-touch-icon-precomposed"                 href="images/apple/touch-icon.png"     />
+	<link rel="apple-touch-icon-precomposed" sizes="72x72"   href="images/apple/touch-icon-72.png"  />
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/apple/touch-icon-114.png" />
+
+	<!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+	
+	<!-- JS Needed at page start -->
+	<script src="js/iscroll.js"></script>
+
+</head>
+<body>
+
+	<section class="line appHeader">
+		<span class="logo">
+			<img src="images/hd/logo.png" alt="Veasyt" class="for-hd-screens" />
+		</span>
+		<nav>
+			<ul>
+				<li class="parent">
+					<a class="touchButton settings" href="javascript:void(0);">Settings</a><!-- Should go to something like settings.html -->
+					<div class="line slideBox threeControls">
+						<ul>
+							<li><a href="javascript:void(0);">Audio + TXT</a></li>
+							<li><a href="javascript:void(0);">IMGs + TXT</a></li>
+							<li><a href="javascript:void(0);">vLIS + TXT</a></li>
+						</ul>
+						<div class="line">
+							<p>
+								Attiva alto contrasto
+								<span class="toggleTwice">
+									<a href="javascript:void(0);">S&Igrave;</a>
+									<a href="javascript:void(0);">NO</a>
+								</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<li class="parent">
+					<a class="touchButton help" href="javascript:void(0);">Help</a>
+					<div class="line slideBox">
+						<h4>Informazioni utili</h4>
+					</div>
+				</li>
+				<li><a class="touchButton back disabled" href="javascript:void(0);">Go back</a></li>
+			</ul>
+		</nav>
+	</section>
+
+	<section class="line appMain">
+		<div id="wrapper">
+			<div id="scroller">
+				<ul class="listItems">
+					<li><a href="guideGo.html">City/Place First</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place</a></li>
+					<li><a href="guideGo.html">City/Place Last</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+    <!-- // JS Files -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<!--script>window.jQuery || document.write('<script src="js/jquery-1.7.min.js"><\/script>')</script jquery local-offline fallback -->
+    <script src="js/functions.js"></script>
+    <script>
+	
+		/* Temporary no-addressbar script for Android*/
+		/*if(navigator.userAgent.match(/Android/i)){
+			window.scrollTo(0,1);
+		}*/
+		
+		/* Initialize iScroll */
+		var myScroll;
+		
+		function loaded() {
+			myScroll = new iScroll('wrapper', { checkDOMChanges: true });
+		}
+		
+		document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+		
+		document.addEventListener('DOMContentLoaded', function () { setTimeout(loaded, 200); }, false); /* Use this for high compatibility (iDevice + Android) */
+		
+	</script>
+
+</body>
+</html>

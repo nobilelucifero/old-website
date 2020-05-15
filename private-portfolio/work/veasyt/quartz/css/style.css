@@ -1,0 +1,176 @@
+/*
+// Yummy Plate 0.1
+
+   Nobile Lucifero, Copyright 2011
+   Fell free to use under the ??? license @ http://www.license.url/what/type.php
+
+   30 September 2011
+
+   Essentials file
+*/
+/*
+
+// TABLE OF CONTENT
+01 Reset
+02 Global
+03 Typograohy
+04 Links
+05 Lists
+06 Buttons
+07 Forms
+09 Tabs
+10 Others
+
+*/
+
+/*
+// 01 Reset
+*/
+
+*, html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, section {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+}
+
+ol li, ul li {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+// 02 Global
+*/
+
+html { font-size: 16px; }
+
+body {
+	/*background: white url(../images/line21.gif);*/
+    color: #444;
+	font: 1em/1.5em "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*
+// 03 Typography
+*/
+	
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	
+	position: relative;
+}
+
+/* Headings */
+h1, h2, h3 { line-height: 42px; margin-bottom: 21px; }
+/*h3,*/ h4, h5, h6 { line-height: 21px; }
+h6 { font-weight: bold; color: #444; }
+h5.subheading { top: -22px; }
+
+h1 { font-size: 38px; top:  3px; }
+h2 { font-size: 30px; top:  5px; }
+h3 { font-size: 24px; top:  8px; /*-2*/ }
+h4 { font-size: 20px; top: -2px; }
+h5 { font-size: 16px; top: -1px; }
+h6 { font-size: 14px; top:  0  ; }
+
+p, pre, address { margin: 0 0 21px 0; }
+
+p.lead {  }
+
+abbr, acronym, figcaption, small { font-size: 12px;line-height: 20px; }
+abbr, acronym { letter-spacing: 0.2px; /*...*/ text-transform: uppercase; }
+abbr[title], acronym[title], dfn[title] { border-bottom: 1px dotted #555; cursor: help; }
+em  { font-style: italic; top: 0px; position: relative; display: inline-block; }
+
+mark { background: rgba(255,255,000,0.50); }
+ins { background: rgba(000,255,255,0.25); text-decoration: none; }
+
+ul, ol { margin-bottom: 21px; }
+li ul, li ol { margin-bottom: 0; }
+ul { list-style: square inside; }
+ol, .numbered { list-style: decimal inside; }
+
+sub,sup { font-size: 10px; line-height: 0; }
+sup { vertical-align: super; }
+sub	{ vertical-align: sub; }
+
+blockquote , cite{ padding: 0 0 0 7px; margin: 0 0 21px; border-left: 3px solid #555; position: relative; top: -6px; }
+blockquote p, cite p { font: italic 16px/21px Georgia, serif; position: relative; top: -1px; top: 5px; margin: 0; }
+blockquote small, cite small { font-size: 12px;line-height: 21px; top: 1px; top: 6px; position: relative; display: block; text-align: right; }
+blockquote small:before, cite small:before { content:"\2013  ";}
+
+code {} /* // multiple lines of code */
+
+pre {} /* // single line of code */
+
+
+/*
+// 04 - Forms
+*/
+
+input[type="text"],
+input[type="password"] {
+	
+}
+
+textarea {
+	
+}
+
+/*
+// 06 - Buttons
+*/
+
+/*
+// 07 - Tabs
+*/
+
+ul.tabs {
+	
+}
+
+ul.tabs li {
+	
+}
+
+ul. tabs li a {
+	
+}
+
+/*
+// 08 - Tweakings
+*/
+
+body {
+	-webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
+	-webkit-text-size-adjust: 100%;
+
+}
+
+input[type="submit"]::-moz-focus-inner {border: 0}
+input[type="submit"]::-webkit-focus-inner {border: 0}
+span.skype_pnh_container {display: none !important} /* hack for skype */
+span.skype_pnh_print_container {display: inline !important} /* hack for skype */
